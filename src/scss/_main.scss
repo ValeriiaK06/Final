@@ -1,0 +1,27 @@
+.intro{
+    min-height: 100vh;
+    padding: 160px 20px;
+    display: flex;
+    margin: 0 -30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("/src/img/icons/hlegal-symbol.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &__title{
+        text-transform: lowercase;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    &__arrow{
+        position: absolute;
+        bottom: 7px;
+        left:50%;
+        transform: translateX(-50%);
+        
+    }
+}
