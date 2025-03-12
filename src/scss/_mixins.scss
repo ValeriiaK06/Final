@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin text-grad{
+  color:transparent;
+  background: $gradient-red-text;
+  background-clip: text;
+}
