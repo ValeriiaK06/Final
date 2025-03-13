@@ -9,3 +9,8 @@
   background: $gradient-red-text;
   background-clip: text;
 }
+@mixin text-grad-hover {
+  color: transparent;
+  background: $gradient-red;
+  background-clip: text;
+}

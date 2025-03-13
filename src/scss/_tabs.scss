@@ -1,5 +1,5 @@
 .tabs{
-   
+   margin-bottom: 80px;
 @media(min-width:1024px) {
         display: flex;
        
@@ -32,7 +32,11 @@
     
     &__link{
         flex-shrink: 0;
-        margin-top: 15px;
+        margin: 15px 0 0 0 ;
+        cursor: pointer;
+        &:hover{
+            @include text-grad-hover;
+        }
         &.active{
         @include text-grad;
         }
@@ -69,7 +73,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
-    @media (min-width:768px){
+        @media (min-width:768px){
         font-size: 30px;
     }
 }

@@ -1,0 +1,51 @@
+.offers{
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+   &__caption-main{
+    @include text-grad;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
+   }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:30px
+       
+    }
+    &__caption{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        cursor: pointer;
+        // color: $active-color;
+    }
+   
+    &__post{
+        width: 100%;
+        flex-shrink: 0;
+        flex-grow: 1;
+        text-align: left;
+        @media (min-width:768px) {
+            width: 40%;
+        }
+        @media(min-width: 1024px){
+            width: 28%;
+        }
+       
+        
+    }
+    
+    &__icon{
+        width: 100%;
+    } 
+    &__function{
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
