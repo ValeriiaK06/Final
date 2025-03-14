@@ -1,4 +1,12 @@
+
+import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '../scss/style.scss'
+
+
 // switchThemeColor()
 
 (function () {
@@ -53,3 +61,23 @@ import '../scss/style.scss'
     });
   });
 })();
+
+// const swiper = new Swiper('.swiper', {
+//   modules: [Navigation, Pagination],
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  
+modules: [Pagination],
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+ 
+});
+

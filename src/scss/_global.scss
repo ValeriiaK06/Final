@@ -40,6 +40,9 @@ a{
 	max-width: 1720px;
 	margin: 0 auto;
 	padding: 0 30px;
+	@media (min-width:768px) {
+		padding: 0 60px;
+	}
 }
 
 
@@ -51,17 +54,7 @@ a{
 	color: #fff;
 	background: $gradient-supersoft;
 	border-radius:0 0  $radius-ml $radius-ml;
-	// &::after{
-	// 	content: "";
-	// 		display: block;
-	// 		left: 50%;
-	// 		position: absolute;
-	// 		transform: translateX(-50%);
-	// 		width: 98%;
-	// 		height: 10px;
-	// 		border-radius: 0 0 $radius-ml $radius-ml;
-	// 		background-color: #CACADB;
-	// }
+	
 
 	
 	
@@ -217,7 +210,7 @@ a{
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
-	gap:5px;
+	gap:3px;
 	max-width: 100px;
 }
 .header__menu {
