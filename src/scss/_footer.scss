@@ -1,0 +1,106 @@
+.footer{
+    .bullet{
+            @media (min-width: 768px) {
+                position: relative;
+                padding-left: 20px;
+    
+                &:before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    position: absolute;
+                    top: 10px;
+                    left: 7px;
+                    background: $text-color;
+                    border-radius: $radius-rounded;
+                    align-items: center;
+                }
+            }
+    
+        }
+    &__cont{
+    border-top: 2px solid $separator-color;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    @media (min-width:768px) {
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
+           
+        }
+    }
+    &__address{
+        color: $main-color;
+        margin-bottom: 10px;
+        @media (min-width:768px) {
+                margin-bottom: 0;
+                padding-top: 3px;
+            }
+    }
+    &__on-map-link{
+        margin-bottom: 21px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        @media (min-width:768px) {
+                margin-bottom: 0;
+                padding-top: 3px;
+            }
+    }
+    &__facebook{
+        width: 38px;
+        font-weight: 38px;
+        margin-bottom: 10px;
+        @media (min-width:768px) {
+                margin-bottom: 0;
+                padding-top: 3px;
+            }
+    }
+    &__tel{
+        color: $main-color;
+        font-weight: 700;
+        margin-bottom: 10px;
+        @media (min-width:768px) {
+                margin-bottom: 0;
+                padding-bottom: 1px;
+            }
+    }
+    &__email{
+        font-weight: 700;
+        margin-bottom: 30px;
+        @media (min-width:768px) {
+            margin-bottom: 0;
+            padding-bottom: 1px;
+        }
+    }
+    &__rights{
+        color: $text-color;
+    }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            @media (min-width:768px) {
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+                
+            }
+            &-right{
+@media (min-width:768px) {
+       position: absolute;
+       right: 0;
+       top:31px;
+    }
+            }
+        }
+
+   
+}
+ 

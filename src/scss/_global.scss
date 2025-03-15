@@ -56,10 +56,14 @@ a{
 	border-radius:0 0  $radius-ml $radius-ml;
 	
 
-	
+
 	
 
 	
+}
+.background {
+	background-color: $bg-color;
+	padding: 30px 0;
 }
 .decoration{
 	display: block;
