@@ -1,6 +1,6 @@
 .offers{
     //margin-bottom: 80px;
-    padding-top: 200px;
+    padding-top: 80px;
     padding-bottom: 40px;
    &__caption-main{
     @include text-grad;
@@ -48,5 +48,11 @@
         border-radius: 20px;
         padding: 10px;
         margin-bottom: 10px;
+    }
+}
+.offer_box{
+    padding-top: 250px;
+    @media (max-width:768px) {
+        padding-top: 130px;
     }
 }
