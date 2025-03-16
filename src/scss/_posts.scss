@@ -1,5 +1,6 @@
 .publication{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $separator-color;
     &__post-container{
         @media (min-width:768px) {
             display: flex;

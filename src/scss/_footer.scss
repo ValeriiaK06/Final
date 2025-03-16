@@ -19,8 +19,8 @@
     
         }
     &__cont{
-    border-top: 2px solid $separator-color;
-    padding: 30px 0;
+    // border-top: 2px solid $separator-color;
+    padding: 0 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@
 @media (min-width:768px) {
        position: absolute;
        right: 0;
-       top:31px;
+       top:0;
     }
             }
         }
