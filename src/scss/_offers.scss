@@ -11,6 +11,7 @@
     @media (min-width:768px) {
         font-size: 38px;
     }
+    
    }
     &__list{
         display: flex;
@@ -68,4 +69,7 @@
     @media (max-width:768px) {
         padding-top: 130px;
     }
+}
+.second {
+    padding-top: 60px;
 }
