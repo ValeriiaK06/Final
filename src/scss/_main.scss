@@ -1,6 +1,6 @@
 .intro{
     min-height: 100vh;
-    padding: 160px 20px;
+    padding: 180px 20px;
     display: flex;
     margin: 0 -30px;
     align-items: center;
@@ -9,7 +9,7 @@
     background-image: url("/src/img/icons/hlegal-symbol.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
 
     &__title{
         text-transform: lowercase;
@@ -20,9 +20,23 @@
     }
     &__arrow{
         position: absolute;
-        bottom: 7px;
+        bottom:2px;
         left:50%;
         transform: translateX(-50%);
+        &-link{
+           width: 42px;
+           height: 42px;
+           fill: none;
+           stroke: #fff;
+           stroke-width: 2px;
+           &:hover{
+             stroke:$accent-color;
+           }
+           &:active{
+            stroke: $active-color;
+           }
+    
+        }
         
     }
 }

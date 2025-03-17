@@ -115,13 +115,22 @@ a{
 		@media (min-width:768px) {
 			width: 130px;
 		}
+		&-slash{
+			
+			fill: $accent-color;
+		}
 		
+	}
+	&__facebook{
+		width: 24px;
+		height: 24px;
+		fill: #fff ;
 	}
 	&__logo{
 		margin-bottom: 25px;
 		margin-top: 12px;
 		display: flex;
-		align-items:flex-start;
+		align-items:center;
 		gap: 8px;
 		@media (min-width:1024px) {
 			position:absolute ;
@@ -225,6 +234,11 @@ a{
 		@media (min-width:768px) {
 			display: none;
 		}
+		&-icon{
+			fill:none;
+			stroke: #fff;
+			stroke-width: 2px;
+		}
 	}
 
 }
@@ -235,7 +249,22 @@ a{
 	display: flex;
 	align-items: center;
 	gap:3px;
-	max-width: 100px;
+	min-width: 100px;
+	&:hover &-icon{
+		stroke: $accent-color;
+	}
+		&:active &-icon {
+			stroke: $active-color;
+		}
+	&-icon{
+		fill:none;
+		stroke: $regular-color;
+		stroke-width: 2px;
+		width: 12px;
+		height:12px;
+	}
+	
+	
 }
 .header__menu {
 
@@ -270,6 +299,11 @@ a{
 	@media (min-width:768px) {
 		display: none;
 	}
+	&-icon{
+		fill:none;
+		stroke: #EC6F5D;
+		stroke-width: 2px;
+	}
 }
 &-list{
 	@media (min-width:768px) {
@@ -294,14 +328,25 @@ a{
 		font-size: 16px;
 		padding-bottom: 5px;
 		border-bottom: 2px solid transparent;
-		&:hover{
+		@media (min-width:768px) {
+			&-actv {
+					color: $accent-color;
+					border-bottom: 2px solid $accent-color;
+					padding-bottom: 4px;
+					font-weight: 700;
+					font-size: 16px;
+					
+				}
+			&:hover {
 			
-			border-color:$accent-color ;
+					border-color: $accent-color ;
+				}
+			
+				&:active {
+					border-color: $active-color;
+				}
 		}
-
-		&:active{
-			border-color: $active-color;
-		}
+		
 		@media (max-width:768px) {
 			background: $bg-color;
 				color: $regular-color;

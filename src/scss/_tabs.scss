@@ -12,7 +12,6 @@
         column-gap: 30px;
         color: $text-color;
         margin-right: -30px;
-        margin-bottom: 60px;
         @media (min-width:768px) {
             font-size: 38;
         }
@@ -55,7 +54,7 @@
             }
                          &-text {
                             
-                             padding-top: 60px;
+                             padding-top: 30px;
                              max-width: 580px;
             
                              &:not(.active) {
@@ -72,13 +71,14 @@
 &__caption {
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 26px;
+    line-height: 1.2;
         @media (min-width:768px){
         font-size: 30px;
     }
 }
 &__description{
-    font-size: 14px;
+    font-size: 19px;
     color:$text-color;
     @media (min-width:768px) {
             font-size: 16px;
